@@ -1,0 +1,57 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+
+    "devices": {
+      "$deviceId": {
+        "paired": {
+          ".read": true,
+          ".write": true
+        },
+        "metrics": {
+          ".read": "auth != null",
+          ".write": true
+        },
+        "processes": {
+          ".read": "auth != null",
+          ".write": true
+        },
+        "pendingCommands": {
+          ".read": true,
+          ".write": true
+        },
+        "commandResults": {
+          ".read": "auth != null",
+          ".write": true
+        },
+        "jobOutput": {
+          ".read": "auth != null",
+          ".write": true
+        },
+        "jobArtifacts": {
+          ".read": "auth != null",
+          ".write": true
+        },
+        "activeRentalSession": {
+          ".read": true,
+          ".write": true
+        }
+      }
+    },
+
+    "pairCodes": {
+      "$pairCode": {
+        ".read": true,
+        ".write": true
+      }
+    },
+
+    "rentals": {
+      "$sessionId": {
+        ".read": "auth != null",
+        ".write": true
+      }
+    }
+  }
+}
