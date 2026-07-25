@@ -6,7 +6,8 @@ A complete production-grade distributed monitoring system is now fully deployed 
 
 ## 1. Web Dashboard (Next.js 16)
 - **Status:** ✅ Built & Deployed Live
-- **Hosting URL:** [https://cluster300809.web.app](https://cluster300809.web.app)
+- **Hosting URL:** [https://clusteros300809.web.app](https://clusteros300809.web.app)
+- **Git Repository:** [https://github.com/Jinchuriki-7/clusteros.git](https://github.com/Jinchuriki-7/clusteros.git) (Clean push with secret scanning and binary size optimization)
 - **Deployment Details:** Deployed using Firebase Hosting. The route structure is fully compatible with static exports (`trailingSlash: true` and `/device/?id=` static route for device details).
 
 ### Pages Map
@@ -70,7 +71,7 @@ A complete production-grade distributed monitoring system is now fully deployed 
    ```
 
 ### 2. Pair and Monitor on the Dashboard
-1. Go to the live hosted site: [https://cluster300809.web.app](https://cluster300809.web.app)
+1. Go to the live hosted site: [https://clusteros300809.web.app](https://clusteros300809.web.app)
 2. Sign in or sign up for a new account.
 3. Navigate to **Devices** → Click **Add Device**.
 4. Enter the **Pair Code** shown in the Agent console.
