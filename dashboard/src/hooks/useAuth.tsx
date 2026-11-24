@@ -12,7 +12,7 @@ function buildLocalUser(email: string): UserProfile {
     uid: 'local-user',
     email,
     displayName: email.split('@')[0],
-    role: 'developer',
+    role: 'admin',
     createdAt: Date.now(),
   };
 }
