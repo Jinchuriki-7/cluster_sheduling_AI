@@ -54,10 +54,10 @@ export default function LoginPage() {
         localStorage.setItem('portal_role', portalRole);
         router.push(portalRole === 'host' ? '/rentals' : '/');
       } else {
-        setError('Invalid email or password. Hint: rahat3008096081@gmail.com / 1234');
+        setError('Invalid email or password. Use: rahat3008096081@gmail.com / 1234');
       }
     } else {
-      // Create Account tab
+      // Create Account mode
       try {
         const localAccounts = JSON.parse(localStorage.getItem('registered_users') || '[]');
         localAccounts.push({ email: cleanEmail, password });
